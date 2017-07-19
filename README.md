@@ -52,9 +52,15 @@ After the `npm run install` command finishes downloading the necessary javascrip
 
 Running `npm run start` will start two locally run servers. One to host the HTML and Javascript files that will be served up at the address `http://localhost:3000` (google chrome should open up to this address for you by the time the command looks like it's done running) and the API server will be running and listening for requests at `http://localhost:8887` (documentation for the API server below)
 
-**Note:** You should see something like this for a successful execution of `npm run start` (it will probably not have the green arrow at the very beginning, or the `git:(master)` parse as that's just a custom feature in my terminal and isn't required for you to run any of of the commands listed).
+**Note:** You should see something like this in your terminal for a successful execution of `npm run start` (it will probably not have the green arrow at the very beginning, or the `git:(master)` parse as that's just a custom feature in my terminal and isn't required for you to run any of of the commands listed).
 
 ![Demo2](https://user-images.githubusercontent.com/8462738/28372019-dba6c64c-6c5b-11e7-8b9e-95c33926cb60.png)
+
+You should see this in your browser if you direct (or the terminal ends up directing to this address for you)
+
+![Demo3](https://user-images.githubusercontent.com/8462738/28372232-63819722-6c5c-11e7-9267-42a254499caa.png)
+
+All the ReactJS code that is currently in the project is just the boilerplate code that it to hold the general structure of a ReactJS app and it's not what you should be showing by the end of the project (You gotta add your own code, baby!)
 
 
 ### Celebrity Chat Messages API
