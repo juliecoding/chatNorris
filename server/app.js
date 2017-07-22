@@ -1,14 +1,17 @@
 const range = require('lodash.range');
 const random = require('lodash.random');
 const express = require('express');
+const cors = require('cors')
 const app = express();
+
 const randomQuoteGenerator = require('./randomQuoteGenerator.js');
 const PORT = 8887;
 let chats = createInitialChats();
 let newChats = [];
 kickOffRandomQuoteAdding();
 
-
+// middleware
+app.use(cors())
 
 app.get('/messagesArchived', function (req, res) {
   res.send(chats);
