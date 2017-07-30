@@ -30,27 +30,14 @@ app.listen(PORT, function () {
 
 
 function createInitialChats() {
-  return range(0, 50).map(randomQuoteGenerator);
+  return range(2, 10).map(randomQuoteGenerator);
 }
 
 // unintelligible reasons for randomizing how much data gets added when.
 function kickOffRandomQuoteAdding() {
   setInterval(() => {
-    if (random(1, 3) === 3) {
+    if ((random(1, 4) === 4) && (newChats.length < 20)) {
       newChats.push(randomQuoteGenerator());
     }
-    else if (random(1, 5) === 5) {
-      newChats.push(
-        randomQuoteGenerator(),
-        randomQuoteGenerator()
-      );
-    }
-    else if (random(1, 8) === 8) {
-      newChats.push(
-        randomQuoteGenerator(),
-        randomQuoteGenerator(),
-        randomQuoteGenerator()
-      );
-    }
-  }, 2000)
+  }, 5000)
 }
